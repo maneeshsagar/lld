@@ -1,5 +1,11 @@
 package domain
 
 type Screen struct {
-	Seats []Seat
+	Seats []*Seat
+}
+
+func NewScreen(seats []*Seat) *Screen {
+	return &Screen{
+		Seats: seats,
+	}
 }

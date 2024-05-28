@@ -2,7 +2,7 @@ package domain
 
 type Theater struct {
 	Id      int
-	Address string
-	Screens []Screen
-	Shows   []Show
+	City    string
+	Screens []*Screen
+	Shows   []*Show
 }
